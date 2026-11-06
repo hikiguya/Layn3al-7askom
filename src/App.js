@@ -59,7 +59,7 @@ function Qui(props) {
     setEditingId(null);
     setEditingQuestion(null);
 
-    setIsDone(updated.length >= 3)
+    setIsDone(updated.length >= 6)
   }
 
   const handleEdit = (f) => {
@@ -83,7 +83,7 @@ function Qui(props) {
     if (editingQuestion) {
       const restored = [...elem.filter(f => f.Ask), editingQuestion];
       setEleme(restored);
-      setIsDone(restored.length >= 3);
+      setIsDone(restored.length >= 6);
     }
     Asking.current.value = "";
     opt1.current.value = "";
