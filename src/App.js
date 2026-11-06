@@ -73,7 +73,7 @@ function Qui(props) {
     const cleanList = newList.filter(f => f.Ask);
     setEleme(cleanList);
     await setDoc(doc(db, "quizzes", val), { questions: cleanList, owner: val });
-    setIsDone(cleanList.length >= 3);
+    setIsDone(cleanList.length >= 6);
     setShowConfirm(false);
     setItemToDelete(null);
   }
