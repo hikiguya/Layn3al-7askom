@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey:REACT_APP_FIREBASE_API_KEY
-  authDomain: 
+  authDomain: REACT_APP_FIREBASE_AUTH_DOMAIN
   projectId: 
   storageBucket:
   messagingSenderId:
